@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calc.MainPage">
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <Label x:Name="Display" Margin="20,35,20,20" TextColor="Black" FontSize="20" Text=""></Label>
+        <Grid HeightRequest="370" Margin="20,35,20,20">
+            <Button Clicked="NumberClicked" x:Name="jedna" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Text="1" />
+            <Button Clicked="NumberClicked" x:Name="dva" BackgroundColor="White" Grid.Row="0" Grid.Column="1" Text="2" />
+            <Button Clicked="NumberClicked" x:Name="tri" BackgroundColor="White" Grid.Row="0" Grid.Column="2" Text="3" />
+            <Button Clicked="NumberClicked" x:Name="ctyri" BackgroundColor="White" Grid.Row="1" Grid.Column="0" Text="4" />
+            <Button Clicked="NumberClicked" x:Name="pet" BackgroundColor="White" Grid.Row="1" Grid.Column="1" Text="5" />
+            <Button Clicked="NumberClicked" x:Name="sest" BackgroundColor="White" Grid.Row="1" Grid.Column="2" Text="6" />
+            <Button Clicked="NumberClicked" x:Name="sedm" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Text="7" />
+            <Button Clicked="NumberClicked" x:Name="osm" BackgroundColor="White" Grid.Row="2" Grid.Column="1" Text="8" />
+            <Button Clicked="NumberClicked" x:Name="devet" BackgroundColor="White" Grid.Row="2" Grid.Column="2" Text="9" />
+            <Button Clicked="NumberClicked" x:Name="plus" BackgroundColor="White" Grid.Row="3" Grid.Column="0" Text="+" />
+            <Button Clicked="NumberClicked" x:Name="minus" BackgroundColor="White" Grid.Row="3" Grid.Column="1" Text="-" />
+            <Button Clicked="NumberClicked" x:Name="deleno" BackgroundColor="White" Grid.Row="3" Grid.Column="2" Text="/" />
+            <Button Clicked="NumberClicked" x:Name="krat" BackgroundColor="White" Grid.Row="4" Grid.Column="0" Text="*" />
+            <Button Clicked="ResultClicked" x:Name="rovnase" BackgroundColor="White" Grid.Row="4" Grid.Column="1" Text="=" />
+            <Button Clicked="DeleteClicked" x:Name="vymazat" BackgroundColor="White" Grid.Row="4" Grid.Column="2" Text="DEL" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
